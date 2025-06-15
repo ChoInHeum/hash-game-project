@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useMediaQuery } from 'react-responsive';
+import SignInModal from './SignInModal';
 import styles from "./Header.module.css";
 
 export default function Header() {
     const isMobile = useMediaQuery({ maxWidth: 1000 })
+    const [showSignIn, setShowSignIn] = useState(false);
+
     return(
         <header className={styles.header}>
             {/* 왼쪽: 로고 */}
@@ -13,7 +16,8 @@ export default function Header() {
                 // 모바일
                 <div>
                     <div className={styles.auth}>
-                        <button className={styles.authButton}>Sign-In</button>
+                        <button className={styles.authButton} onClick={() => setShowSignIn(true)}>Sign-In</button>
+                        {showSignIn && <SignInModal onClose={() => setShowSignIn(false)}/>}
                         <button className={styles.authButton}>Sign-Up</button>
                     </div>    
                 </div>
@@ -28,7 +32,8 @@ export default function Header() {
 
                     {/* 오른쪽: 로그인/회원가입 */}
                     <div className={styles.auth}>
-                        <button className={styles.authButton}>Sign-In</button>
+                        <button className={styles.authButton} onClick={() => setShowSignIn(true)}>Sign-In</button>
+                        {showSignIn && <SignInModal onClose={() => setShowSignIn(false)}/>}
                         <button className={styles.authButton}>Sign-Up</button>
                     </div>
                 </>

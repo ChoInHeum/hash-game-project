@@ -1,5 +1,6 @@
-.body {
-    background-color: black;
+/* index.css 또는 App.css 등 전역 CSS에 추가 */
+body {
+  background-color: black;
 }
 
 .main {
@@ -53,6 +54,12 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 
     background-color: #2e2e2e;
+
+    transition: transform 0.3s ease;
+}
+
+.gameCard:hover {
+    transform: scale(1.05);
 }
 
 /* Explain Gaem */
@@ -67,9 +74,13 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 
     background-color: #2e2e2e;
+
+    transition: transform 0.3s ease;
 }
 
-
+.explainCard:hover {
+    transform: scale(1.05);
+}
 
 
 
