@@ -1,0 +1,107 @@
+/* Share */
+/* Share */
+.main {
+    display: flex;
+    height: calc(100vh - 200px);
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCard_div {
+    box-sizing: border-box;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding: 2rem 2rem;
+
+    border-radius: 2rem;
+
+    color: white;
+    background-color: #1e1e1e;
+}
+
+.h1 {
+    font-size: 2.5rem;
+
+    margin: 0 0;
+}
+
+.h2 {
+    font-size: 2rem;
+
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.h3 {
+    font-size: 1.5rem;
+}
+
+.p {
+    font-size: 1rem;
+
+    margin: 0 0;
+}
+
+.title_section {
+    margin-bottom: 3rem;
+}
+
+.introduce_section {
+    margin-bottom: 3rem;
+}
+
+.explain_section {
+    margin-bottom: 0;
+}
+
+.gameCardContainer_div {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.gameCard_div {
+    flex: 1 1 250px;
+
+    border-radius: 1rem;
+    padding: 1rem;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    background-color: #2e2e2e;
+
+    transition: transform 0.3s ease;
+}
+
+.explainCard_div {
+    border-radius: 1rem;
+    padding: 1rem;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    background-color: #2e2e2e;
+
+    transition: transform 0.3s ease;
+}
+
+/* Pc */
+@media (min-width: 1000px) {
+    .gameCard_div:hover {
+        transform: scale(1.05);
+    }
+    .explainCard_div:hover {
+        transform: scale(1.05);
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 999px) {
+    .main {
+        height: auto;
+        margin: 0 2rem;
+        margin-bottom: 3rem;
+    }
+}

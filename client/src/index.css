@@ -1,5 +1,27 @@
+@media (min-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 999px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+button {
+  font-family: inherit;
+  border: none;
+}
+
 body {
   margin: 0;
+
+  min-width: 360px;
+
+  background-color: black;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

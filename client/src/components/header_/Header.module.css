@@ -1,0 +1,129 @@
+/* Share */
+.main_header {
+    display: flex;
+    box-sizing: border-box;
+
+    height: 100px;
+
+    padding: 1rem 2rem;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: black;
+}
+
+.main_header a {
+    text-decoration: none;
+}
+
+.main_header h1 {
+    width: 250px;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: white;
+}
+
+/* PC */
+@media (min-width: 1000px) {
+    .main_header .nav {
+        display: flex;
+
+        justify-content: center;
+        align-items: stretch;
+
+        width: 400px;
+        height: 45px;
+
+        border-radius: 2rem;
+
+        gap: 0;
+
+        background-color: #1e1e1e;
+        overflow: hidden;
+    }
+    .main_header .nav .button {
+        flex: 1;
+
+        font-size: 1.25rem;
+        font-weight: bold;
+
+        cursor: pointer;
+        
+        color: white;
+        background-color: #1e1e1e;
+
+        transition: background-color 0.3s ease;
+    }
+
+    .main_header .nav .button:hover {
+        color: black;
+        background-color: white;
+    }
+
+    .authContainer {
+        display: flex;
+
+        width: 250px;
+        height: 45px;
+
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 2rem;
+
+        background-color: transparent;
+        gap: 0;
+        overflow: hidden;
+    }
+    .authContainer .button {
+        flex: 1;
+
+        width: 125px;
+        height: 45px;
+
+        border: none;
+
+        font-size: 1.25rem;
+        font-weight: bold;
+
+        cursor: pointer;
+
+        color: white;
+        background-color: #1e1e1e;
+
+        transition: background-color 0.3s ease;
+    }
+
+    .authContainer .button:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .main_header .menu {
+        display: none;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 999px) {
+    .main_header nav {
+        display: none;
+    }
+
+    .authContainer {
+        display: none;
+    }
+
+    .main_header .menu .button {
+        border: none;
+
+        font-size: 2.5rem;
+        font-weight: bold;
+        cursor: pointer;
+
+        color:  white;
+        background-color: transparent;
+    }
+}
