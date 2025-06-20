@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header_/Header";
 import Footer from "./components/footer_/Footer";
-import MainPage from "./pages/MainPage_/MainPage";
-import LoginPage from "./pages/AuthPage_/LoginPage";
+import MainPage from "./pages/MainPage/MainPage";
+import SignInPage from "./pages/AuthPage/SignInPage";
 
 
 export default function App() {
@@ -11,7 +11,7 @@ export default function App() {
         <Header/>
         <Routes>
           <Route path="" element={<MainPage/>}/>
-          <Route path="/Login" element={<LoginPage/>}/>
+          <Route path="/auth/signin" element={<SignInPage/>}/>
         </Routes>
         <Footer/>
     </Router>

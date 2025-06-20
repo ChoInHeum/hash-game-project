@@ -38,7 +38,6 @@ export default function MainPage() {
             </div>
           </section>
         </div>
-        
       </main>
   );
 };
